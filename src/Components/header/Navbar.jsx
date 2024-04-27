@@ -61,7 +61,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     : "hover:text-[#FF497C]"
                 }
               >
-                <span>All Arts & Craft Items</span>
+                <span>All Items</span>
               </NavLink>
             </li>
             <li>
@@ -75,7 +75,21 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     : "hover:text-[#FF497C]"
                 }
               >
-                <span>Add Craft Item</span>
+                <span>Add Item</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/myCart"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FF497C] border-b-4 border-[#FF497C]"
+                    : "hover:text-[#FF497C]"
+                }
+              >
+                <span>My Cart</span>
               </NavLink>
             </li>
             <li>
@@ -200,7 +214,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     : "hover:text-[#FF497C]"
                 }
               >
-                <span>All Art & Craft Items</span>
+                <span>All Items</span>
               </NavLink>
             </li>
             <li>
@@ -215,7 +229,21 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     : "hover:text-[#FF497C]"
                 }
               >
-                <span>Add Craft Item</span>
+                <span>Add Item</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/myCart"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FF497C] border-b-4 border-[#FF497C]"
+                    : "hover:text-[#FF497C]"
+                }
+              >
+                <span>My Cart</span>
               </NavLink>
             </li>
             <li>

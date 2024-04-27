@@ -7,6 +7,7 @@ import RegisterPage from "../Pages/RegisterPage";
 import AllArtsAndCraftsItems from "../Pages/AllArtsAndCraftsItems";
 import ProtectedRoute from "../utilitis/ProtectedRoute";
 import AddArts from "../Pages/AddArts";
+import MyCartPage from "../Pages/MyCartPage";
 
 const Route = createBrowserRouter([
     {
@@ -27,6 +28,13 @@ const Route = createBrowserRouter([
                 element: <ProtectedRoute>
                     <AddArts></AddArts>
                 </ProtectedRoute>
+            },
+            {
+                path: "/myCart",
+                element: <ProtectedRoute>
+                    <MyCartPage/>
+                </ProtectedRoute>,
+                // loader: productsOfCart,
             },
             {
                 path: "/signIn",

@@ -5,35 +5,35 @@ import useAuth from "../hooks/useAuth.jsx";
 const AddArts = ({ update }) => {
 
     const { user } = useAuth() || {};
-  const handleAddCraft = (e) => {
-    e.preventDefault();
+    const handleAddCraft = (e) => {
+        e.preventDefault();
 
-    const name = e.target.name.value;
-    const price = e.target.price.value;
-    const image = e.target.image.value;
-    const subcategory_Name = e.target.subcategory_Name.value;
-    const customization = e.target.customization.value;
-    const shortDescription = e.target.shortDescription.value;
-    const processing_time = e.target.processing_time.value;
-    const email = user.email;
+        const name = e.target.name.value;
+        const price = e.target.price.value;
+        const image = e.target.image.value;
+        const subcategory_Name = e.target.subcategory_Name.value;
+        const customization = e.target.customization.value;
+        const shortDescription = e.target.shortDescription.value;
+        const processing_time = e.target.processing_time.value;
+        const email = user.email;
 
-    // console.log(name, price, image, type)
+        // console.log(name, price, image, type)
 
-    const info = { name, price, image, subcategory_Name, email, customization, shortDescription, processing_time };
+        const info = { name, price, image, subcategory_Name, email, customization, shortDescription, processing_time };
 
-    fetch("http://localhost:5000/addArts", {
-      method: "POST",
-      headers: { "Content-type": "application/json" },
-      body:JSON.stringify(info)
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (data?.insertedId) {
-            Swal.fire("Your Craft has been added");
-      }
-    })
-   
-  };
+        fetch("http://localhost:5000/addArts", {
+            method: "POST",
+            headers: { "Content-type": "application/json" },
+            body: JSON.stringify(info)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data?.insertedId) {
+                    Swal.fire("Your Craft has been added");
+                }
+            })
+
+    };
 
     return (
         <div className="gadgetContainer pt-10">
@@ -81,13 +81,13 @@ const AddArts = ({ update }) => {
                                 placeholder="Select subcategory_Name"
                             >
                                 <option value="Mountain view canvas" selected>
-                                Mountain view canvas
+                                    Mountain view canvas
                                 </option>
                                 <option value="Pencil Sketch Portrait" selected>
-                                Pencil Sketch Portrait
+                                    Pencil Sketch Portrait
                                 </option>
                                 <option value="Floral Watercolor Art" selected>
-                                Floral Watercolor Art
+                                    Floral Watercolor Art
                                 </option>
                             </select>
 
@@ -121,7 +121,7 @@ const AddArts = ({ update }) => {
                                     Yes
                                 </option>
                                 <option value="No" selected>
-                                No
+                                    No
                                 </option>
                             </select>
                         </div>
@@ -138,7 +138,7 @@ const AddArts = ({ update }) => {
                                 name="image"
                             />
                             <label className="block mb-2 mt-4 dark:text-white" htmlFor="type">
-                            short description
+                                short description
                             </label>
                             <input
                                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
@@ -179,8 +179,8 @@ const AddArts = ({ update }) => {
                             />
                         </div>
                     </div>
-                    
-                    
+
+
 
                     <input
                         className="px-4 w-full py-2 mt-4 rounded hover:bg-[#ab3154]  bg-[#FF497C] duration-200 text-white cursor-pointer font-semibold"
