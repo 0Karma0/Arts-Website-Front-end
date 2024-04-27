@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import NotFoundPage from "../Pages/NotFoundPage";
 import HomePage from "../Pages/Home";
 import LoginPage from "../Pages/LoginPage";
+import RegisterPage from "../Pages/RegisterPage";
 
 const Route = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const Route = createBrowserRouter([
     {
         path: "/signIn",
         element: <LoginPage />,
+    },
+    {
+        path: "/signUp",
+        element: <RegisterPage />,
     },
 ]);
 

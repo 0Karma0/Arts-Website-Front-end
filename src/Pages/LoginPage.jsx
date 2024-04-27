@@ -9,6 +9,7 @@ import Spinner from "../Components/Spinner";
 const LoginPage = () => {
   const navigate = useNavigate();
   const {
+    // eslint-disable-next-line no-unused-vars
     user,
     signInWithEmailPassword,
     googleSignIn,
@@ -20,6 +21,7 @@ const LoginPage = () => {
   // google sign in
   const handleGoogleSignIn = () => {
     googleSignIn()
+      // eslint-disable-next-line no-unused-vars
       .then((result) => {
         setLoading(false);
         navigate(location?.state ? location.state : "/");
@@ -33,6 +35,7 @@ const LoginPage = () => {
   // github sign in
   const handleGithubSignIn = () => {
     githubSignIn()
+      // eslint-disable-next-line no-unused-vars
       .then((result) => {
         setLoading(false);
         navigate(location?.state ? location.state : "/");
@@ -54,6 +57,7 @@ const LoginPage = () => {
 
     // Sign In
     signInWithEmailPassword(email, password)
+      // eslint-disable-next-line no-unused-vars
       .then((result) => {
         setLoading(false);
         navigate(location?.state ? location.state : "/");
