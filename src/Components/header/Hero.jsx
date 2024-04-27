@@ -11,7 +11,7 @@ import "swiper/css/effect-fade";
 
 const Hero = () => {
   return (
-    <div className="gadgetContainer lg:h-[600px]  bg-gradient-to-r from-[#F9F3F0] from-10% via-[#FCE7DC] via-30% to-[#F9F3F0] to-90% dark:bg-gradient-to-r dark:from-[#f2f2d8] dark:from-10% dark:via-[#FCE7DC] dark:via-30% dark:to-[#fae1d4]">
+    <div className="gadgetContainer lg:h-[600px]  bg-gradient-to-r from-[#F9F3F0] from-10% via-[#FCE7DC] via-20% to-[#F9F3F0] to-90% dark:bg-gradient-to-r dark:from-[#f2f2d8] dark:from-10% dark:via-[#FCE7DC] dark:via-20% dark:to-[#fae1d4]">
       <Swiper
         effect={"fade"}
         fadeEffect={{ crossFade: true }}
@@ -34,25 +34,16 @@ const Hero = () => {
                   <span className="bg-[#FF497C] text-white mr-3 text-xl px-2 py-1 rounded-full">
                     <i className="bx bxs-hot"></i>
                   </span>
-                  Top Brands
+                  Top Crafts
                 </p>
 
                 <p className="xl:text-[50px] lg:text-[40px] md:text-[32px] text-[30px] font-bold text-center md:text-left">
-                  Discover the Future <br />
-                  of Electronics
+                  Discover the New <br />
+                  Arts & Crafts
                 </p>
                 <p className="font-medium text-black/60 md:text-lg text-center md:text-left">
-                  Stay ahead with the latest tech trends and innovations.
+                  Stay ahead with the latest Arts & Crafts.
                 </p>
-
-                <div className="flex justify-center md:justify-start">
-                  <button className="bg-[#FF497C] py-2 mt-5 px-3 rounded text-white font-semibold hover:bg-[#ab3154]">
-                    <span className="mr-3">
-                      <i className="bx bx-hive"></i>
-                    </span>
-                    Explore Now
-                  </button>
-                </div>
               </div>
 
               {/* left */}
@@ -75,25 +66,16 @@ const Hero = () => {
                   <span className="bg-[#FF497C] text-white mr-3 text-xl px-2 py-1 rounded-full">
                     <i className="bx bxs-hot"></i>
                   </span>
-                  Top Brands
+                  Top Crafts
                 </p>
 
                 <p className="xl:text-[50px] lg:text-[40px] md:text-[32px] text-[30px] font-bold text-center md:text-left">
                   Your Trusted Source for <br />
-                  Quality Gadgets
+                  Arts & Crafts
                 </p>
                 <p className="font-medium text-black/60 md:text-lg text-center md:text-left">
-                  Explore a wide range of cutting-edge electronic devices
+                  Explore a wide range of Arts & Crafts
                 </p>
-
-                <div className="flex justify-center md:justify-start">
-                  <button className="bg-[#FF497C] py-2 mt-5 px-3 rounded text-white font-semibold hover:bg-[#ab3154]">
-                    <span className="mr-3">
-                      <i className="bx bx-hive"></i>
-                    </span>
-                    Explore Now
-                  </button>
-                </div>
               </div>
 
               {/* left */}
@@ -116,25 +98,16 @@ const Hero = () => {
                   <span className="bg-[#FF497C] text-white mr-3 text-xl px-2 py-1 rounded-full">
                     <i className="bx bxs-hot"></i>
                   </span>
-                  Top Brands
+                  Top Crafts
                 </p>
 
                 <p className="xl:text-[50px] lg:text-[40px] md:text-[32px] text-[30px] font-bold text-center md:text-left">
-                Shop Smart, Shop <br /> TechWonders 
+                Shop Smart, Shop <br /> Arts & Crafts 
                 
                 </p>
                 <p className="font-medium text-black/60 md:text-lg text-center md:text-left">
-                Find the perfect tech solutions for your lifestyle.
+                Find the perfect Craft for your lifestyle.
                 </p>
-
-                <div className="flex justify-center md:justify-start">
-                  <button className="bg-[#FF497C] py-2 mt-5 px-3 rounded text-white font-semibold hover:bg-[#ab3154]">
-                    <span className="mr-3">
-                      <i className="bx bx-hive"></i>
-                    </span>
-                    Explore Now
-                  </button>
-                </div>
               </div>
 
               {/* left */}

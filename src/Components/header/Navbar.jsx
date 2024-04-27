@@ -78,6 +78,20 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 <span>Add Craft Item</span>
               </NavLink>
             </li>
+            <li>
+              <NavLink
+                to="/signUp"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FF497C] border-b-4 border-[#FF497C]"
+                    : "hover:text-[#FF497C]"
+                }
+              >
+                <span>Register</span>
+              </NavLink>
+            </li>
           </ul>
         </nav>
 
@@ -202,6 +216,20 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                 }
               >
                 <span>Add Craft Item</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to="/signUp"
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-[#FF497C] border-b-4 border-[#FF497C]"
+                    : "hover:text-[#FF497C]"
+                }
+              >
+                <span>Register</span>
               </NavLink>
             </li>
           </ul>
