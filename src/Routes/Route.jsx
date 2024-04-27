@@ -4,6 +4,7 @@ import NotFoundPage from "../Pages/NotFoundPage";
 import HomePage from "../Pages/Home";
 import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
+import AllArtsAndCraftsItems from "../Pages/AllArtsAndCraftsItems";
 
 const Route = createBrowserRouter([
     {
@@ -14,6 +15,10 @@ const Route = createBrowserRouter([
             {
                 path: "/",
                 element: <HomePage />
+            },
+            {
+                path: "/allItems",
+                element: <AllArtsAndCraftsItems></AllArtsAndCraftsItems>
             },
             {
                 path: "/signIn",

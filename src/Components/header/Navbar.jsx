@@ -52,7 +52,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
             </li>
             <li>
               <NavLink
-                to="/product/add"
+                to="/allItems"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
@@ -61,7 +61,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     : "hover:text-[#FF497C]"
                 }
               >
-                <span>Add Product</span>
+                <span>All Arts & Craft Items</span>
               </NavLink>
             </li>
             <li>
@@ -178,7 +178,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
             <li>
               <NavLink
                 onClick={() => setSideOpen(!sideOpen)}
-                to="/product/add"
+                to="/allItems"
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
@@ -187,7 +187,7 @@ const Navbar = ({ setDarkMode, darkMode }) => {
                     : "hover:text-[#FF497C]"
                 }
               >
-                <span>Add Product</span>
+                <span>All Art & Craft Items</span>
               </NavLink>
             </li>
             <li>

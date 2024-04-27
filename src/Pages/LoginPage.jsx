@@ -105,7 +105,7 @@ const LoginPage = () => {
           >
             <p className="font-bold text-3xl mt-20 mx-6">
               We Offer the <br />
-              Best Products
+              Best Arts & Crafts
             </p>
           </div>
 
@@ -113,7 +113,7 @@ const LoginPage = () => {
             <div className=" p-5 ">
               <div className="pb-8">
                 <p className="text-3xl font-bold mb-2">
-                  Sign in to GigaGadgets.
+                  Sign in to Arts & Crafts.
                 </p>
 
                 <p className="font-semibold text-black/60">

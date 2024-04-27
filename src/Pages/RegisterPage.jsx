@@ -141,7 +141,7 @@ const RegisterPage = () => {
             >
               <p className="font-bold text-3xl mt-20 mx-6">
                 We Offer the <br />
-                Best Products
+                Best Arts & Crafts
               </p>
             </div>
 
