@@ -15,15 +15,15 @@ const Route = createBrowserRouter([
                 path: "/",
                 element: <HomePage />
             },
+            {
+                path: "/signIn",
+                element: <LoginPage />,
+            },
+            {
+                path: "/signUp",
+                element: <RegisterPage />,
+            },
         ]
-    },
-    {
-        path: "/signIn",
-        element: <LoginPage />,
-    },
-    {
-        path: "/signUp",
-        element: <RegisterPage />,
     },
 ]);
 

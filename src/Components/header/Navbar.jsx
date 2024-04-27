@@ -1,14 +1,14 @@
 // image import
 import { useState } from "react";
 import logo from "../../assets/logo.png";
-import darkimg from "../../assets/dark.png";
-import lightimg from "../../assets/light.png";
+import darking from "../../assets/dark.png";
+import lighting from "../../assets/light.png";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import toast from "react-hot-toast";
 
 // eslint-disable-next-line react/prop-types
-const Navber = ({ setDarkMode, darkMode }) => {
+const Navbar = ({ setDarkMode, darkMode }) => {
   const navigate = useNavigate();
   const [sideOpen, setSideOpen] = useState(false);
   const [userOpen, setUserOpen] = useState(false);
@@ -91,7 +91,7 @@ const Navber = ({ setDarkMode, darkMode }) => {
             >
               <img
                 className="md:w-full   w-10 object-cover"
-                src={darkMode ? lightimg : darkimg}
+                src={darkMode ? lighting : darking}
                 alt=""
               />
             </button>
@@ -242,4 +242,4 @@ const Navber = ({ setDarkMode, darkMode }) => {
   );
 };
 
-export default Navber;
+export default Navbar;
