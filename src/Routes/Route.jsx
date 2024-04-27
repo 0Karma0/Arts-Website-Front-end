@@ -5,6 +5,8 @@ import HomePage from "../Pages/Home";
 import LoginPage from "../Pages/LoginPage";
 import RegisterPage from "../Pages/RegisterPage";
 import AllArtsAndCraftsItems from "../Pages/AllArtsAndCraftsItems";
+import ProtectedRoute from "../utilitis/ProtectedRoute";
+import AddArts from "../Pages/AddArts";
 
 const Route = createBrowserRouter([
     {
@@ -19,6 +21,12 @@ const Route = createBrowserRouter([
             {
                 path: "/allItems",
                 element: <AllArtsAndCraftsItems></AllArtsAndCraftsItems>
+            },
+            {
+                path: "/addArts",
+                element: <ProtectedRoute>
+                    <AddArts></AddArts>
+                </ProtectedRoute>
             },
             {
                 path: "/signIn",
