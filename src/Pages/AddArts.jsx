@@ -11,12 +11,15 @@ const AddArts = ({ update }) => {
     const name = e.target.name.value;
     const price = e.target.price.value;
     const image = e.target.image.value;
-    const type = e.target.type.value;
+    const subcategory_Name = e.target.subcategory_Name.value;
+    const customization = e.target.customization.value;
+    const shortDescription = e.target.shortDescription.value;
+    const processing_time = e.target.processing_time.value;
     const email = user.email;
 
     // console.log(name, price, image, type)
 
-    const info = { name, price, image, type, email };
+    const info = { name, price, image, subcategory_Name, email, customization, shortDescription, processing_time };
 
     fetch("http://localhost:5000/addArts", {
       method: "POST",
@@ -68,23 +71,23 @@ const AddArts = ({ update }) => {
                                 className="block mt-4 mb-2 dark:text-white"
                                 htmlFor="brand"
                             >
-                                Brand Name
+                                subcategory_Name
                             </label>
                             <select
-                                name="brand"
-                                id="brand"
+                                name="subcategory_Name"
+                                id="subcategory_Name"
                                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
                                 type="text"
-                                placeholder="Select Brand"
+                                placeholder="Select subcategory_Name"
                             >
-                                <option value="Test" selected>
-                                    Test
+                                <option value="Mountain view canvas" selected>
+                                Mountain view canvas
                                 </option>
-                                <option value="Test2" selected>
-                                    Test2
+                                <option value="Pencil Sketch Portrait" selected>
+                                Pencil Sketch Portrait
                                 </option>
-                                <option value="Test3" selected>
-                                    Test3
+                                <option value="Floral Watercolor Art" selected>
+                                Floral Watercolor Art
                                 </option>
                             </select>
 
@@ -101,6 +104,26 @@ const AddArts = ({ update }) => {
                                 id="Price"
                                 name="price"
                             />
+                            <label
+                                className="block mt-4 mb-2 dark:text-white"
+                                htmlFor="brand"
+                            >
+                                Customization
+                            </label>
+                            <select
+                                name="customization"
+                                id="customization"
+                                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                                type="text"
+                                placeholder="customization"
+                            >
+                                <option value="Yes" selected>
+                                    Yes
+                                </option>
+                                <option value="No" selected>
+                                No
+                                </option>
+                            </select>
                         </div>
                         {/* Right side */}
                         <div className="flex-1">
@@ -115,14 +138,14 @@ const AddArts = ({ update }) => {
                                 name="image"
                             />
                             <label className="block mb-2 mt-4 dark:text-white" htmlFor="type">
-                                Type
+                            short description
                             </label>
                             <input
                                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
                                 type="text"
-                                placeholder="Enter type"
-                                id="type"
-                                name="type"
+                                placeholder="Enter short description"
+                                id="shortDescription"
+                                name="shortDescription"
                             />
 
                             <label
@@ -141,8 +164,23 @@ const AddArts = ({ update }) => {
                                 id="rating"
                                 name="rating"
                             />
+                            <label
+                                className="block mt-4 mb-2 dark:text-white"
+                                htmlFor="processing_time"
+                            >
+                                processing_time
+                            </label>
+                            <input
+                                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                                type="number"
+                                placeholder="Enter processing_time"
+                                id="processing_time"
+                                name="processing_time"
+                            />
                         </div>
                     </div>
+                    
+                    
 
                     <input
                         className="px-4 w-full py-2 mt-4 rounded hover:bg-[#ab3154]  bg-[#FF497C] duration-200 text-white cursor-pointer font-semibold"
