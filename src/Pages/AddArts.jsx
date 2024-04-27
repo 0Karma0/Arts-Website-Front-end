@@ -1,10 +1,11 @@
+import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth.jsx";
 
 // eslint-disable-next-line react/prop-types
 const AddArts = ({ update }) => {
 
     const { user } = useAuth() || {};
-  const handleAddProduct = (e) => {
+  const handleAddCraft = (e) => {
     e.preventDefault();
 
     const name = e.target.name.value;
@@ -25,7 +26,7 @@ const AddArts = ({ update }) => {
       .then(res => res.json())
       .then(data => {
         if (data?.insertedId) {
-        alert("bhai data insert hoice")
+            Swal.fire("Your Craft has been added");
       }
     })
    
@@ -44,12 +45,12 @@ const AddArts = ({ update }) => {
                             <span className="text-[#FF497C]">
                                 {update ? "Update " : "Add "}
                             </span>
-                            Your Product
+                            Your Craft
                         </span>
                     </p>
                 </div>
                 {/* form */}
-                <form onSubmit={handleAddProduct}>
+                <form onSubmit={handleAddCraft}>
                     <div className="flex gap-8 ">
                         <div className="flex-1">
                             <label className="block mb-2 dark:text-white" htmlFor="name">
