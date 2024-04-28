@@ -10,7 +10,7 @@ const ArtDetails = () => {
     const [item, setItem] = useState([]);
     // console.log(user);
     useEffect(() => {
-        fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/products/${id}`)
+        fetch(`https://arts-and-crafts.vercel.app/products/${id}`)
             .then((res) => res.json())
             .then((data) => {
                 setItem(data);

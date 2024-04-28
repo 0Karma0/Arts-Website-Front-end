@@ -24,7 +24,7 @@ const AddArts = ({ update }) => {
 
         const info = { name, price, image, rating, subcategory_Name, email, customization, shortDescription, processing_time, stockStatus, item_name  };
 
-        fetch("https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/addArts", {
+        fetch("https://arts-and-crafts.vercel.app/addArts", {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(info)

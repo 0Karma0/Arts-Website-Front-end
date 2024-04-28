@@ -14,7 +14,7 @@ const ProductsDetails = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/singleProduct/${id}`)
+    fetch(`https://arts-and-crafts.vercel.app/singleProduct/${id}`)
       .then(res => res.json())
       .then(data => {
         setProduct(data);
@@ -41,7 +41,7 @@ const ProductsDetails = () => {
         // console.log(name, price, image, type)
 
         const info = { name, price, image, rating, subcategory_Name, email, customization, shortDescription, processing_time, stockStatus, item_name  };
-        fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/updateProduct/${id}`,{
+        fetch(`https://arts-and-crafts.vercel.app/updateProduct/${id}`,{
           method: "PUT",
           headers: {
             "content-type": "application/json"

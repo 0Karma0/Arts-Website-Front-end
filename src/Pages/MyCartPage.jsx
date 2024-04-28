@@ -11,7 +11,7 @@ const MyCartPage = () => {
   const [control, setControl] = useState(false);
   // console.log(user);
   useEffect(() => {
-    fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/myArts/${user?.email}`)
+    fetch(`https://arts-and-crafts.vercel.app/myArts/${user?.email}`)
       .then((res) => res.json())
       .then((data) => {
         setItem(data);
@@ -29,7 +29,7 @@ const MyCartPage = () => {
       confirmButtonText: "Yes, delete it!"
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/delete/${_id}`, {
+        fetch(`https://arts-and-crafts.vercel.app/delete/${_id}`, {
           method: 'DELETE'
         })
           .then(res => res.json())
