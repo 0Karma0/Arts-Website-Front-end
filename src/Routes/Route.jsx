@@ -47,7 +47,11 @@ const Route = createBrowserRouter([
             },
             {
                 path: "/artDetails/:id",
-                element: <ArtDetails />,
+                element:
+                    (<ProtectedRoute>
+                        <ArtDetails />
+                    </ProtectedRoute>
+                    ),
             },
             {
                 path: "/signIn",
