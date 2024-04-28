@@ -10,10 +10,11 @@ import AddArts from "../Pages/AddArts";
 import MyCartPage from "../Pages/MyCartPage";
 import ProductsDetails from "../Pages/ProductsDetails";
 import {
-  //oneProductLoader,
-  //productOfBrands,
-  //productsOfCart,
+    //oneProductLoader,
+    //productOfBrands,
+    //productsOfCart,
 } from "../utilitis/LoaderHandle";
+import ArtDetails from "../Pages/ArtDetails";
 
 const Route = createBrowserRouter([
     {
@@ -38,19 +39,23 @@ const Route = createBrowserRouter([
             {
                 path: "/myCart",
                 element: <ProtectedRoute>
-                    <MyCartPage/>
+                    <MyCartPage />
                 </ProtectedRoute>,
                 // loader: productsOfCart,
             },
             {
                 path: "/products/:id",
                 element: (
-                  <ProtectedRoute>
-                    <ProductsDetails />
-                  </ProtectedRoute>
+                    <ProtectedRoute>
+                        <ProductsDetails />
+                    </ProtectedRoute>
                 ),
                 //loader: oneProductLoader,
-              },
+            },
+            {
+                path: "/artDetails/:id",
+                element: <ArtDetails />,
+            },
             {
                 path: "/signIn",
                 element: <LoginPage />,
