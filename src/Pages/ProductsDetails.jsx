@@ -1,6 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
-import { baseURL } from "../utilitis/url";
 import { useEffect, useState } from "react";
 import Spinner from "../Components/Spinner";
 import toast from "react-hot-toast";
@@ -15,7 +14,7 @@ const ProductsDetails = () => {
   const [product, setProduct] = useState({});
 
   useEffect(() => {
-    fetch(`http://localhost:5000/singleProduct/${id}`)
+    fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/singleProduct/${id}`)
       .then(res => res.json())
       .then(data => {
         setProduct(data);
@@ -42,7 +41,7 @@ const ProductsDetails = () => {
         // console.log(name, price, image, type)
 
         const info = { name, price, image, rating, subcategory_Name, email, customization, shortDescription, processing_time, stockStatus, item_name  };
-        fetch(`http://localhost:5000/updateProduct/${id}`,{
+        fetch(`https://arts-and-crafts-9875403is-mahadi-adibs-projects.vercel.app/updateProduct/${id}`,{
           method: "PUT",
           headers: {
             "content-type": "application/json"
