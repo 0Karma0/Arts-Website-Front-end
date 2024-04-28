@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="pt-20 dark:bg-[#0F172A]">
       {/* Newsletter */}
-      <div className="bg-gradient-to-r from-[#F9F3F0] from-10% via-[#FCE7DC] via-30% to-[#F9F3F0] to-90% dark:bg-gradient-to-r dark:from-[#f2f2d8] dark:from-10% dark:via-[#FCE7DC] dark:via-30% dark:to-[#fae1d4] gadgetContainer">
+      <div className="bg-gradient-to-r from-[#F9F3F0] from-10% via-[#FCE7DC] via-30% to-[#F9F3F0] to-90% dark:bg-gradient-to-r dark:from-[#f2f2d8] dark:from-10% dark:via-[#FCE7DC] dark:via-30% dark:to-[#fae1d4] gadgetContainer mx-auto">
         <div className="flex flex-col gap-4 lg:flex-row justify-between items-center py-4">
           <div className="flex gap-2">
             <span className="text-3xl text-[#FF497C]">

@@ -15,11 +15,13 @@ const AddArts = ({ update }) => {
         const customization = e.target.customization.value;
         const shortDescription = e.target.shortDescription.value;
         const processing_time = e.target.processing_time.value;
+        const stockStatus = e.target.stockStatus.value;
+        const item_name = e.target.item_name.value;
         const email = user.email;
 
         // console.log(name, price, image, type)
 
-        const info = { name, price, image, subcategory_Name, email, customization, shortDescription, processing_time };
+        const info = { name, price, image, subcategory_Name, email, customization, shortDescription, processing_time, stockStatus, item_name  };
 
         fetch("http://localhost:5000/addArts", {
             method: "POST",
@@ -69,7 +71,7 @@ const AddArts = ({ update }) => {
 
                             <label
                                 className="block mt-4 mb-2 dark:text-white"
-                                htmlFor="brand"
+                                htmlFor="subcategory_Name"
                             >
                                 subcategory_Name
                             </label>
@@ -99,14 +101,14 @@ const AddArts = ({ update }) => {
                             </label>
                             <input
                                 className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
-                                type="text"
+                                type="number"
                                 placeholder="Enter Price"
                                 id="Price"
                                 name="price"
                             />
                             <label
                                 className="block mt-4 mb-2 dark:text-white"
-                                htmlFor="brand"
+                                htmlFor="Customization"
                             >
                                 Customization
                             </label>
@@ -124,6 +126,19 @@ const AddArts = ({ update }) => {
                                     No
                                 </option>
                             </select>
+                            <label
+                                className="block mt-4 mb-2 dark:text-white"
+                                htmlFor="item_name"
+                            >
+                                item_name
+                            </label>
+                            <input
+                                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                                type="text"
+                                placeholder="Enter item_name"
+                                id="item_name"
+                                name="item_name"
+                            />
                         </div>
                         {/* Right side */}
                         <div className="flex-1">
@@ -177,6 +192,26 @@ const AddArts = ({ update }) => {
                                 id="processing_time"
                                 name="processing_time"
                             />
+                            <label
+                                className="block mt-4 mb-2 dark:text-white"
+                                htmlFor="stockStatus"
+                            >
+                                stockStatus
+                            </label>
+                            <select
+                                name="stockStatus"
+                                id="stockStatus"
+                                className="w-full p-2 border rounded-md focus:outline-[#FF497C]"
+                                type="text"
+                                placeholder="stockStatus"
+                            >
+                                <option value="In stock" selected>
+                                In stock
+                                </option>
+                                <option value="Made to Order" selected>
+                                Made to Order
+                                </option>
+                            </select>
                         </div>
                     </div>
 
