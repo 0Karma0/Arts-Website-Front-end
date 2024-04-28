@@ -17,11 +17,12 @@ const AddArts = ({ update }) => {
         const processing_time = e.target.processing_time.value;
         const stockStatus = e.target.stockStatus.value;
         const item_name = e.target.item_name.value;
+        const rating = e.target.rating.value;
         const email = user.email;
 
         // console.log(name, price, image, type)
 
-        const info = { name, price, image, subcategory_Name, email, customization, shortDescription, processing_time, stockStatus, item_name  };
+        const info = { name, price, image, rating, subcategory_Name, email, customization, shortDescription, processing_time, stockStatus, item_name  };
 
         fetch("http://localhost:5000/addArts", {
             method: "POST",

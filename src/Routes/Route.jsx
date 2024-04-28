@@ -8,6 +8,12 @@ import AllArtsAndCraftsItems from "../Pages/AllArtsAndCraftsItems";
 import ProtectedRoute from "../utilitis/ProtectedRoute";
 import AddArts from "../Pages/AddArts";
 import MyCartPage from "../Pages/MyCartPage";
+import ProductsDetails from "../Pages/ProductsDetails";
+import {
+  //oneProductLoader,
+  //productOfBrands,
+  //productsOfCart,
+} from "../utilitis/LoaderHandle";
 
 const Route = createBrowserRouter([
     {
@@ -36,6 +42,15 @@ const Route = createBrowserRouter([
                 </ProtectedRoute>,
                 // loader: productsOfCart,
             },
+            {
+                path: "/products/:id",
+                element: (
+                  <ProtectedRoute>
+                    <ProductsDetails />
+                  </ProtectedRoute>
+                ),
+                //loader: oneProductLoader,
+              },
             {
                 path: "/signIn",
                 element: <LoginPage />,

@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import { useEffect, useState } from "react";
 
@@ -20,7 +21,7 @@ const MyCartPage = () => {
       {
         // eslint-disable-next-line no-unused-vars
         item?.map(p => (
-          <div className="" key={item._id}>
+          <div className="" key={p._id}>
             <div className="card bg-base-100 shadow-xl">
               <figure><img src={p.image} alt="Shoes" /></figure>
               <div className="card-body">
@@ -34,7 +35,7 @@ const MyCartPage = () => {
                   <p>item_name: {p.item_name}</p>
                 </div>
                 <div className="card-actions justify-between">
-                  <button className="btn btn-primary">Update</button>
+                  <Link to={`/products/${p._id}`}><button className="btn btn-primary">Update</button></Link>
                   <button className="btn btn-secondary">Delete</button>
                 </div>
               </div>
