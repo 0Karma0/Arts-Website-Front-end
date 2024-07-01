@@ -10,7 +10,7 @@ Features:
 - user can update & delete there arts & crafts.
 
 Tips to run the website locally:
-download zip or use git clone - *link*
-npm i [to install all the dependencies.]
-npm run dev
+- download zip or use git clone - *link*
+- npm i [to install all the dependencies.]
+- npm run dev
 
