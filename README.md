@@ -10,6 +10,12 @@ Features:
 - anyone can see all the arts&crafts of the website
 - user can update & delete there arts & crafts.
 
+Technologies:
+- mongodb
+- reactjs
+- firebase-auth
+- tailwindcss
+  
 Tips to run the website locally:
 - download zip or use git clone - *link*
 - npm i [to install all the dependencies.]
